@@ -10,7 +10,7 @@ app.use(cors({
     credentials: true
 }));
 
-app.get("/coins", (req, res) => {
+app.post("/coins", (req, res) => {
     // contain a string
     let input = req.body.crypto;
     let coins = [

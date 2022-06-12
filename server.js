@@ -1,19 +1,15 @@
 let express = require("express");
 let app = express();
 let cors = require("cors");
-require('dotenv').config();
-let port = process.env.PORT;
+let port = "2500";
 
 app.use(express.json());
 
-/*app.use(cors({
+app.use(cors({
     origin: "https://justinssoftware.com",
     credentials: true
-}));*/
+}));
 
-app.get("/", (req, res) => {
-    res.send("hello from main page");
-})
 app.get("/coins", (req, res) => {
     // contain a string
     let input = req.body.crypto;
@@ -174,7 +170,7 @@ app.get("/coins", (req, res) => {
         }
     })
     res.json({
-        result: coins
+        result: result
     })
 })
 

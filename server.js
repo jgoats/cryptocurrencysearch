@@ -6,7 +6,7 @@ let port = process.env.PORT;
 app.use(express.json());
 
 app.use(cors({
-    origin: ["https://justinssoftware.com", "http://localhost:3000"],
+    origin: "https://www.justinssoftware.com",
     credentials: true
 }));
 

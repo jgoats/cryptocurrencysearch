@@ -15,7 +15,7 @@ app.post("/coins", (req, res) => {
     let input = req.body.crypto;
     let coins = [
         ["bitcoin", { id: "bitcoin" }],
-        ["etherium", { id: "etherium" }],
+        ["ethereum", { id: "ethereum" }],
         ["tether", { id: "tether" }],
         ["usd-coin", { id: "usd-coin" }],
         ["binancecoin", { id: "binancecoin" }],
